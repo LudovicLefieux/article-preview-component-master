@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Article preview component</title>
 
@@ -27,17 +27,130 @@
     </style>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main>
+      <div class="article-preview">
+        <div class="article-preview__img-container"></div>
+        <div class="article-preview__text">
+          <div class="article-preview__content">
+            <h1 class="article-preview__content__title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="article-preview__content__details">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="article-preview__infos">
+            <div class="article-preview__author">
+              <div class="article-preview__author__img">
+                <img src="./images/avatar-michelle.jpg" alt="Author Picture" />
+              </div>
+              <div class="article-preview__author__details">
+                <span class="name">Michelle Appleton</span>
+                <span class="date">28 Jun 2020</span>
+              </div>
+            </div>
+            <div
+              id="share-section-desktop"
+              class="share-section share-section--desktop"
+            >
+              <div class="share-section__social share-section--desktop__social">
+                <span
+                  class="
+                    share-section__social__text
+                    share-section--desktop__text
+                  "
+                  >Share</span
+                >
+                <ul
+                  class="
+                    share-section__social__icons
+                    share-section--desktop__social__icons
+                  "
+                >
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><img
+                        src="./images/icon-facebook.svg"
+                        alt="Facebook icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank"
+                      ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.fr/" target="_blank"
+                      ><img
+                        src="./images/icon-pinterest.svg"
+                        alt="Pinterest icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="#" class="share-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            id="share-section-mobile"
+            class="share-section share-section--mobile"
+          >
+            <div class="share-section__social">
+              <span class="share-section__social__text">Share</span>
+              <ul class="share-section__social__icons">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><img src="./images/icon-facebook.svg" alt="Facebook icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank"
+                    ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.fr/" target="_blank"
+                    ><img
+                      src="./images/icon-pinterest.svg"
+                      alt="Pinterest icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#"
+              class="share-button share-button--dark share-button--mobile"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="white"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://ludovic-lefieux.fr/" target="_blank">Ludovic Lefieux</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
