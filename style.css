@@ -292,7 +292,7 @@ main {
 }
 .article-preview__img-container {
   min-height: 200px;
-  background: url(../../images/drawers.jpg) no-repeat;
+  background: url(../images/drawers.jpg) no-repeat;
   background-size: cover;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
@@ -328,6 +328,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .article-preview__infos {
+    padding: 0 30px 20px 40px;
+  }
 }
 .article-preview__author {
   display: flex;
