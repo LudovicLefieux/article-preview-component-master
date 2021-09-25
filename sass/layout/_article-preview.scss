@@ -1,0 +1,76 @@
+.article-preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+  @media screen and (min-width: 780px) {
+    overflow: visible;
+  }
+  &__img-container {
+    min-height: 200px;
+    background: url(../../images/drawers.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    @media screen and (min-width: 900px) {
+      min-width: 285px;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+  &__content {
+    box-sizing: border-box;
+    padding: 40px 30px;
+    line-height: 1.5;
+    @media screen and (min-width: 900px) {
+      padding: 40px 40px 25px 40px;
+    }
+    &__title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &__details {
+      color: $grayish-blue;
+    }
+  }
+  &__infos {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__author {
+    display: flex;
+    &__img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 16px;
+      > img {
+        width: 100%;
+      }
+    }
+    &__details {
+      display: flex;
+      flex-direction: column;
+      > .name {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      > .date {
+        color: $grayish-blue;
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    max-width: 730px;
+  }
+}

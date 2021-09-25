@@ -1,0 +1,43 @@
+/****** SHARE MOBILE ******/
+
+@keyframes SlideUp {
+  0% {
+    bottom: -71px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes SlideDown {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -71px;
+  }
+}
+
+/****** SHARE DESKTOP ******/
+
+@keyframes PopIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes PopOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

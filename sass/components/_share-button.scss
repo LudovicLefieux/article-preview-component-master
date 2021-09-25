@@ -1,0 +1,11 @@
+.share-button {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+  background: $light-grayish-blue;
+  border-radius: 50%;
+}
+
+.share-button.share-button--dark {
+  background: $desaturated-dark-blue;
+}
